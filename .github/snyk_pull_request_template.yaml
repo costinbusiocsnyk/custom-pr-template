@@ -1,0 +1,16 @@
+title: Snyk [{{ snyk_pull_request_type }}] for {{ package_name }}
+branchName: {{ snyk_pull_request_type }}/snyk
+commitMessage: |
+  {{ snyk_pull_request_type}}: for {{ package_name }}
+
+  {{ jira_ids }}
+
+  Moving package {{ package_name }} from {{ package_from }} to {{ package_to }}
+description: |
+  Moving package {{ package_name }} from {{ package_from }} to {{ package_to }}
+  
+  Fixes {{ issue_count }} issues
+  For more details see {{ snyk_project_url }}
+  
+  Project {{ snyk_project_name }}
+  Org {{ snyk_org_name }}
